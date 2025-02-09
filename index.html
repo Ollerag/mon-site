@@ -12,6 +12,21 @@
     <header>
       <h1>Bienvenue sur mon site !</h1>
       <p>Je suis développeur en herbe 🚀</p>
+      <!-- Menu burger -->
+      <div class="menu-burger" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu déroulant -->
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section>
@@ -29,5 +44,13 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
