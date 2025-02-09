@@ -130,3 +130,17 @@ button:hover {
   }
 }
 
+/* Conteneur Flexbox */
+.conteneur-flex {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;     /* Centrer verticalement */
+    height: 100vh;           /* Prendre toute la hauteur de l'écran */
+}
+
+.element {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    margin: 10px;
+}
